@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Dipak Kushwaha - Professional Teacher for Grade 10 to 12 students. Learn, practice and achieve your academic goals.">
-  <meta name="author" content="Dipak Kushwaha">
+  <meta name="description" content="Dipak Kumar Kushwaha - Professional Teacher for Grade 10 to 12 students. Learn, practice and achieve your academic goals.">
+  <meta name="author" content="Dipak Kumar Kushwaha">
 
-  <title>Dipak Kushwaha | Teacher & Mentor</title>
+  <title>Dipak Kumar Kushwaha | Teacher & Mentor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 
   <style>
     /* =====================================================
@@ -183,33 +187,58 @@
     }
 
     .navbar {
-      height: 78px;
+      height: 88px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .logo {
-      font-size: 24px;
-      font-weight: 900;
-      color: var(--dark);
+      font-family: 'Century Gothic', 'Century Schoolbook', Century, 'Trebuchet MS', sans-serif;
       display: flex;
       align-items: center;
-      gap: 9px;
+      gap: 12px;
     }
 
     .logo-icon {
-      width: 42px;
-      height: 42px;
+      width: 46px;
+      height: 46px;
       display: grid;
       place-items: center;
       color: white;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: #0f4c4c;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: 800;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      line-height: 1.1;
+    }
+
+    .logo-name {
+      font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #000000;
+    }
+
+    .logo-tagline {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      color: var(--accent);
+      text-transform: uppercase;
     }
 
     .logo span {
-      color: var(--primary);
+      color: #000000;
     }
 
     .nav-links {
@@ -220,13 +249,16 @@
     }
 
     .nav-links a {
+      display: inline-block;
       font-weight: 600;
       color: var(--dark);
-      transition: 0.3s;
+      transition: 0.25s ease;
+      transform: scale(1);
     }
 
     .nav-links a:hover {
-      color: var(--primary);
+      color: var(--accent);
+      transform: scale(1.15);
     }
 
     .nav-actions {
@@ -236,15 +268,15 @@
     }
 
     .icon-btn {
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       border: 1px solid var(--border);
       background: var(--white);
       color: var(--dark);
       display: grid;
       place-items: center;
-      font-size: 18px;
+      font-size: 14px;
     }
 
     .menu-btn {
@@ -292,12 +324,15 @@
       margin-bottom: 20px;
     }
 
+    /* Latinized (classic serif, Latin-style) heading */
     .hero h1 {
+      font-family: 'Playfair Display', 'Times New Roman', Georgia, serif;
       font-size: clamp(45px, 6vw, 72px);
-      line-height: 1.02;
+      line-height: 1.05;
       color: var(--dark);
       margin-bottom: 20px;
-      letter-spacing: -2px;
+      letter-spacing: -1px;
+      font-style: italic;
     }
 
     .hero h1 .gradient {
@@ -381,8 +416,16 @@
       border: 8px solid rgba(255,255,255,0.25);
     }
 
+    /* Main name: black color, different font type from body (Arial) */
     .teacher-placeholder h3 {
-      font-size: 30px;
+      font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #000000;
+      background: #ffffff;
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 10px;
       margin-bottom: 8px;
     }
 
@@ -406,9 +449,10 @@
       top: 80px;
     }
 
+    /* Grade 10-12 floating card moved a little further down */
     .floating-card.two {
       right: 0;
-      bottom: 60px;
+      bottom: 25px;
       animation-delay: 1s;
     }
 
@@ -1034,10 +1078,10 @@
 
       .nav-links {
         position: fixed;
-        top: 78px;
+        top: 88px;
         right: -100%;
         width: 280px;
-        height: calc(100vh - 78px);
+        height: calc(100vh - 88px);
         background: var(--white);
         flex-direction: column;
         align-items: flex-start;
@@ -1197,7 +1241,10 @@
 
       <a href="#home" class="logo">
         <div class="logo-icon">DK</div>
-        Dipak <span>Kushwaha</span>
+        <div class="logo-text">
+          <span class="logo-name">Dipak Kumar Kushwaha</span>
+          <span class="logo-tagline">Teacher &middot; Mentor &middot; Educator</span>
+        </div>
       </a>
 
       <ul class="nav-links" id="navLinks">
@@ -1251,7 +1298,7 @@
 
           <p class="hero-description">
             Welcome to the official learning platform of
-            <strong>Dipak Kushwaha</strong>. Clear concepts,
+            <strong>Dipak Kumar Kushwaha</strong>. Clear concepts,
             build confidence and prepare effectively for
             your Grade 10, 11 and 12 academic journey.
           </p>
@@ -1298,7 +1345,7 @@
                 👨‍🏫
               </div>
 
-              <h3>Dipak Kushwaha</h3>
+              <h3>Dipak Kumar Kushwaha</h3>
 
               <p>
                 Teacher • Mentor • Educator
@@ -1551,7 +1598,7 @@
           </h2>
 
           <p>
-            I am <strong>Dipak Kushwaha</strong>, a dedicated teacher
+            I am <strong>Dipak Kumar Kushwaha</strong>, a dedicated teacher
             committed to helping students from Grade 10 to 12 understand
             their subjects and perform at their best.
           </p>
@@ -1636,33 +1683,9 @@
           </div>
 
           <div class="subject reveal">
-            <div class="subject-icon">🧪</div>
-            <h3>Chemistry</h3>
-            <p>Theory & practical concepts</p>
-          </div>
-
-          <div class="subject reveal">
-            <div class="subject-icon">🧬</div>
-            <h3>Biology</h3>
-            <p>Concepts, diagrams & revision</p>
-          </div>
-
-          <div class="subject reveal">
-            <div class="subject-icon">💻</div>
-            <h3>Computer</h3>
-            <p>Programming & technology</p>
-          </div>
-
-          <div class="subject reveal">
             <div class="subject-icon">📖</div>
             <h3>English</h3>
             <p>Grammar & communication</p>
-          </div>
-
-          <div class="subject reveal">
-            <div class="subject-icon">🌍</div>
-            <h3>Social Studies</h3>
-            <p>History, geography & society</p>
           </div>
 
           <div class="subject reveal">
@@ -2078,7 +2101,7 @@
         <div class="footer-brand">
 
           <h2>
-            Dipak Kushwaha
+            Dipak Kumar Kushwaha
           </h2>
 
           <p>
@@ -2119,7 +2142,7 @@
       <div class="footer-bottom">
 
         <span>
-          © <span id="year"></span> Dipak Kushwaha.
+          © <span id="year"></span> Dipak Kumar Kushwaha.
           All rights reserved.
         </span>
 
@@ -2471,7 +2494,7 @@
         if (
           link.getAttribute("href") === "#" + current
         ) {
-          link.style.color = "var(--primary)";
+          link.style.color = "var(--accent)";
         }
 
       });
